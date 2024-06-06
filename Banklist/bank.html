@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bank.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div > <h3 class="name" style="font-style: oblique;"> Welcome !</h3></div>
+        <div><img src="https://th.bing.com/th/id/R.acffeeb09b9888555eba1f47bf2ecaef?rik=gdMGqQH21SCT1A&riu=http%3a%2f%2fclipart-library.com%2fimages%2f5cRrG477i.png&ehk=01oYHMbtyBd9LNcYVNDUOLaTEndNsbBgYoA9QJyVfas%3d&risl=&pid=ImgRaw&r=0" alt="" srcset=""></div>
+        <div class="user-cred">
+            <input type="text" name="username" id="username" placeholder="UserName">
+            <input type="password"  id="password" placeholder="password">
+            <button onclick="checkuser()" ><img src="https://www.freeiconspng.com/uploads/arrow-icon--myiconfinder-23.png" alt="SUBMIT"></button>
+
+        </div>
+    </div>
+
+    <!---              navbar over                -->
+<div class="box">
+    <div class="container">
+
+        <div class="container-balance">
+
+            <div class="balance">
+                    <h3 >Current Balance </h3>
+                    <h6 class="current-date">kjhhdjkghskhfjk</h6>
+            </div>
+
+            <div class="balance-currency">
+                <h1> $ <span class="amount-info">16,0000</span></h1>
+            </div>
+            
+        </div>
+
+        <div class="services">
+            <div class="statements">
+            </div>
+
+            <div class="other-services">
+                <div class="transfer">
+                    <h1>Transfer</h1>
+                    <div>
+                        <input id="transferto" placeholder="Transfer To">
+                        <input id="amountotransfer" placeholder="Amount" type="number">
+                        <button onclick="transfer()"><img src="https://www.freeiconspng.com/uploads/arrow-icon--myiconfinder-23.png" alt="SUBMIT"></button>
+                    </div>
+                </div>
+
+
+                <div class="request">
+
+                        <h1>Request Loan</h1>
+                        <div>
+                            <input id="amount-requested" placeholder="Amount" type="number">
+                            <button onclick="request()"><img src="https://www.freeiconspng.com/uploads/arrow-icon--myiconfinder-23.png" alt="SUBMIT"></button>
+                        </div>
+
+                </div>
+
+
+                <div class="close">
+
+                        <h1>Close account</h1>
+                        <div>
+                            <input id="userid" placeholder="Confirm User">
+                            <input id="userpin" type="number" placeholder="Confirm Pin">
+                            <button onclick="close()"><img src="https://www.freeiconspng.com/uploads/arrow-icon--myiconfinder-23.png" alt="SUBMIT"></button>
+                        </div>
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="invest">
+            <div class="boxes">IN <span class='in'></span></div>
+            <div class="boxes">OUT <span class="out"></span></div>
+            <div class="boxes">INTEREST <span class="interest"></span></div>
+        </div>
+    </div>
+</div>
+<script src="./bank.js"></script>
+</body>
+</html>`
